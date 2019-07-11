@@ -1,0 +1,51 @@
+body{
+    background-color: #0a0a0a;
+}
+.header-container{
+    color: #fff;
+    display: block;
+    margin: 50px 50px;
+}
+.gallery{
+    display: flex; /** to make it a flex container **/
+    width: 900px; /** centering in flexbox layout **/
+    margin: auto; /** to center the gallery div horizontally **/
+    /** border: 2px dashed gray; **/
+    /** justify-content: center; /** to align the flex-items inside flex-container **/
+    justify-content: space-between; /** the flex-items inside it are automatically placed in such a way that the space between them are equal **/
+    flex-wrap: wrap;
+}
+figure{
+    width: 280px;
+    margin: 0; /** get rid of the default margin on figure element **/
+    border: 1px solid #0a0a0a;
+    padding: 8px; /** text do not touch the borders **/
+    box-sizing: border-box; /** shrink contents to make space for the padding **/
+    /** flex-shrink: 0; **/
+    background-color: #fff;
+}
+figure img{
+    width: 100%;
+}
+figure figcaption{
+    text-align: center;
+    padding: 8px 4px;
+}
+/** * {
+    box-sizing: border-box;
+} **/
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.more{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid white;
+    width: 60px;
+    padding: 30px;
+    margin: 50px;
+}
